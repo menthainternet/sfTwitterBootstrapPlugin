@@ -281,6 +281,11 @@ The best way to show how to use this parameters is with an example:
             image:            textcloud.png
             credentials:      [admin]
             nav-header:       Comments #menu header
+            sub-items:
+              Tag:
+                url: tag
+                image: tag.png
+                credentials:  [[admin, publisher]]
 
 ## Display custom field in a form
 
