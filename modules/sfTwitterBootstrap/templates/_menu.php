@@ -39,8 +39,8 @@ use_helper('I18N');
                     <b class="caret"></b>
                 </a>
                 <?php if (isset($category['items']) && sfTwitterBootstrap::hasItemsMenu($category['items'])): ?>
-                <ul class="dropdown-menu">
-                <?php include_partial('sfTwitterBootstrap/menu_list', array('items' => $category['items'], 'items_in_menu' => true)) ?>
+                <ul class="dropdown-menu" role="menu">
+                    <?php include_partial('sfTwitterBootstrap/menu_list', array('items' => $category['items'], 'items_in_menu' => true)) ?>
                 </ul>
                 <?php endif; ?>
             <?php endif; ?>
