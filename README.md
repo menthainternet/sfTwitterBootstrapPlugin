@@ -53,9 +53,7 @@ default:
     - main.css
 
   javascripts:
-    - "/sfTwitterBootstrapPlugin/js/jquery-1.8.3.min.js"
-    - "/sfTwitterBootstrapPlugin/js/jquery.tablesorter.min.js"
-    - "/sfTwitterBootstrapPlugin/js/google-code-prettify/prettify.js"
+    - "/sfTwitterBootstrapPlugin/js/jquery-1.9.1.min.js"
     - "/sfTwitterBootstrapPlugin/bootstrap/js/bootstrap-dropdown.js"
     - "/sfTwitterBootstrapPlugin/bootstrap/js/bootstrap-tooltip.js"
     - "/sfTwitterBootstrapPlugin/bootstrap/js/bootstrap-scrollspy.js"
@@ -63,7 +61,9 @@ default:
     - "/sfTwitterBootstrapPlugin/bootstrap/js/bootstrap-alert.js"
     - "/sfTwitterBootstrapPlugin/js/application.js"
     - "/sfTwitterBootstrapPlugin/js/bootbox/bootbox.min.js"
-    - "/sfTwitterBootstrapPlugin/js/jquery-ui-1.9.2.custom.min.js" # For date pickers ...
+    - "/sfTwitterBootstrapPlugin/js/google-code-prettify/prettify.js"
+    - "/sfTwitterBootstrapPlugin/js/jquery.tablesorter.min.js"
+    - "/sfTwitterBootstrapPlugin/js/jquery-ui-1.10.2.custom.min.js" # For date pickers ...
 
 
   layout:         %SF_PLUGINS_DIR%/sfTwitterBootstrapPlugin/templates/layout
@@ -281,6 +281,11 @@ The best way to show how to use this parameters is with an example:
             image:            textcloud.png
             credentials:      [admin]
             nav-header:       Comments #menu header
+            sub-items:
+              Tag:
+                url: tag
+                image: tag.png
+                credentials:  [[admin, publisher]]
 
 ## Display custom field in a form
 
