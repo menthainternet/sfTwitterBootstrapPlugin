@@ -6,7 +6,7 @@
 class sfWidgetFormSchemaFormatterTwitterBootstrap extends sfWidgetFormSchemaFormatter
 {
   protected $rowFormat = <<<EOL
-<div class="control-group%row_error_class%%row_field_class%">
+<div class="control-group">
   %label%
   <div class="controls">
     %error%
